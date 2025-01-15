@@ -35,7 +35,15 @@
 using namespace std;
 
 bool isPalindrome(Node* start, Node* end) {
-  // TODO
-  assert(false);
-  return false;
+  while(start != end) {
+    if (start->value != end->value){
+      return false;
+    }
+    if (start->next == end){
+      return true;
+    }
+    start = start-> next;
+    end = end->prev;
+  }
+  return true;
 }
