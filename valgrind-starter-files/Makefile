@@ -217,7 +217,7 @@ ungraded: identifier $(UNGRADED_SUBMITFILE)
 
 # REMOTE_PATH has default definition above
 sync2caen:
-ifeq ($(UNIQNAME), youruniqname)
+ifeq ($(hoatr), youruniqname)
 	@echo Edit UNIQNAME variable in Makefile.
 	@exit 1;
 endif
